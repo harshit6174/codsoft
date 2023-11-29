@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Company Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header {
+            background-color: aqua;
+            color: #0b0a0a;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navbar a, .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .dark-mode-btn {
+            background-color: #555;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .faq-section {
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .navbar {
+            background-color: #444;
+        }
+
+        .dark-mode .section {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode .testimonial {
+            background-color: #444;
+            border-color: #666;
+        }
+
+        .dark-mode .newsletter-form {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .faq-section {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .dark-mode .footer {
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to iTech</h1>
+        <p>Your Tech Problems Solver</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#about" onclick="scrollToSection('about')">About Us</a>
+        <a href="#services" onclick="scrollToSection('services')">Services</a>
+        <a href="#testimonials" onclick="scrollToSection('testimonials')">Testimonials</a>
+        <a href="#newsletter" onclick="scrollToSection('newsletter')">Newsletter</a>
+        <a href="#faq" onclick="scrollToSection('faq')">FAQ</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        <button class="btn dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are a tech company dedicated to innovation and excellence. Our mission is to transform ideas into reality.</p>
+    </div>
+
+    <div class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="column">
+                <h3>Web Development</h3>
+                <p>We create responsive and user-friendly websites for your business.</p>
+            </div>
+            <div class="column">
+                <h3>Mobile Apps</h3>
+                <p>We design and develop mobile apps for various platforms.</p>
+            </div>
+            <div class="column">
+                <h3>Consulting</h3>
+                <p>We provide expert tech consulting to help your business succeed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Great company! They delivered exactly what we needed."</p>
+            <p>- Happy Client</p>
+        </div>
+    </div>
+
+    <div class="section" id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <div class="newsletter-form">
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <button class="btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-section">
+            <p>Q: How can I contact your support team?</p>
+            <p>A: You can reach our support team at support@isoft.com</p>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <a href="mailto:xyz345@gmail.com">xyz345@gmail.com</a>
+        <p>Ph: 79038XXXXX</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Tech Company. All rights reserved.
+    </div>
+</body>
+</html>
