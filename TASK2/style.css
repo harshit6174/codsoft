@@ -1,4 +1,4 @@
-/* Reset and global styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header styles */
+
 header {
     text-align: center;
     padding: 20px;
@@ -19,7 +19,7 @@ header img {
     margin-top: 20px;
 }
 
-/* Navigation styles */
+
 nav {
     background-color: #333;
     color: white;
@@ -39,7 +39,7 @@ nav a {
     color: white;
 }
 
-/* Section styles */
+
 .section {
     padding: 50px;
     text-align: center;
@@ -105,7 +105,7 @@ form button {
     margin-bottom: 15px;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     .section {
         padding: 30px;
@@ -116,7 +116,7 @@ form button {
     }
 }
 
-/* Navigation bar hover effect */
+
 nav ul li a:hover {
     color: #4CAF50;
 }
