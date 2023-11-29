@@ -1,0 +1,122 @@
+/* Reset and global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section styles */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+/* Skills styles */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+.skills-list i {
+    margin-right: 5px;
+}
+
+.skills-progress {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #4CAF50;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    height:100px;
+    width:100px;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+/* Navigation bar hover effect */
+nav ul li a:hover {
+    color: #4CAF50;
+}
